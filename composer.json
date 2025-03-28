@@ -1,0 +1,22 @@
+{
+    "name": "antic-notification-module/centreon-mailer",
+    "description": "Centreon Mailer",
+    "homepage": "https://africanticgroup.com/",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Justin N'GUESSAN",
+      "email": "justin.nguessan@hotmail.com",
+      "homepage": "https://africanticgroup.com/@team/"
+    }
+  ],
+    "platform": {
+      "php": "7.4"
+    },
+  "version": "1.0"
+}
