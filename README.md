@@ -28,14 +28,14 @@ _ Server PHP 7 or older installed on your Poller
  
 * Copy the script to __/usr/lib64/nagios/plugins/mail/__
 
-* Edit the script __/usr/lib64/nagios/plugins/mail/notify-by-email-php.php__ Configure your server's configuration information (host, port, user, password etc.) in config/config.php: 
+* Edit the script __/usr/lib64/nagios/plugins/mail/centreon-mailer.php__ Configure your server's configuration information (host, port, user, password etc.) in config/config.php: 
       
 * __Make the file executable__
 
 
 ### On Centreon 
  
-* create a notification command named: __notify-by-email-php__
+* create a notification command named: __Centreon Mailer__
 * Fill in the command line field with this: 
 > /opt/rh/rh-php72/root/bin/php $USER1$/mail/centreon-mailer/centreon-mailer.php "NOTIFICATIONTYPE=$NOTIFICATIONTYPE$" "HOSTNAME=$HOSTNAME$" "HOSTALIAS=$HOSTALIAS$" "HOSTADDRESS=$HOSTADDRESS$" "HOSTDURATION=$HOSTDURATION$" "HOSTID=$HOSTID$" "HOSTSTATE=$HOSTSTATE$" "HOSTOUTPUT=$HOSTOUTPUT$" "LASTHOSTCHECK=$LASTHOSTCHECK$" "LASTHOSTSTATECHANGE=$LASTHOSTSTATECHANGE$" "LASTSERVICECHECK=$LASTSERVICECHECK$" "LASTSERVICESTATECHANGE=$LASTSERVICESTATECHANGE$" "LONGDATETIME=$LONGDATETIME$" "NOTIFICATIONAUTHOR=$NOTIFICATIONAUTHOR$" "NOTIFICATIONCOMMENT=$NOTIFICATIONCOMMENT$" "SERVICEDESC=$SERVICEDESC$" "SERVICEID=$SERVICEID$" "SERVICEOUTPUT=$SERVICEOUTPUT$" "SERVICESTATE=$SERVICESTATE$" "SERVICEDURATION=$SERVICEDURATION$" "NOTIFICATIONNUMBER=$NOTIFICATIONNUMBER$" "CONTACTEMAIL=$CONTACTEMAIL$"
 
